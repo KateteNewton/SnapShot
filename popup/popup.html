@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapShot</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <div class="brand-icon">S</div>
+
+        <div>
+            <h1>SnapShot</h1>
+            <p>Capture your broswer</p>
+        </div>
+        </div>
+
+        <span class="version">v1.0</span>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>What would you like to capture?</h2>
+            <p>Take a screenshot of the current webpage</p>
+        </section>
+
+        <section class="capture-options">
+            <button id="captureButton" class="capture-button">
+                Capture Visible Area
+            </button>
+
+            <div class="format-control">
+                <label for="formatSelect">Image Format</label>
+
+                <select id="formatSelect">
+                    <option value="png">PNG</option>
+                    <option value="jpeg">JPG</option>
+                </select>
+            </div>
+        </section>
+
+        <p id="status" class="status" aria-label="">Ready To Capture</p>
+
+        <section id="previewPanel" class="preview-panel">
+            <h3>Screenshot Preview</h3>
+
+            <img id="previewImage" alt="Captured webpage screenshot">
+
+            <button id="downloadButton" class="download-button">
+                Download Screenshot
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>SnapShot &copy; 2026</p>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>

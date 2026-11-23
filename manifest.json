@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "SnapShot",
+    "version": "1.0.0",
+    "description": "Capture, edit and organize broswer screenshots.",
+
+    "permissions": [
+        "activeTab",
+        "downloads"
+    ],
+
+    "action":{
+        "default_title": "SnapShot",
+        "default_popup": "popup/popup.html"
+    }
+}

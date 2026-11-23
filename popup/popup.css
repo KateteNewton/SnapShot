@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 360px;
+    min-height: 420px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.brand{
+    display: flex;
+
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon{
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    background: #2563eb;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header h1{
+    font-size: 19px;
+}
+
+.header p,
+.intro p {
+    color: #718096;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.version{
+    background: #e2e8f0;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.intro{
+    margin-bottom: 22px;
+}
+
+.intro h2 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.capture-options{
+    background: white;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.capture-button,
+.download-button {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.capture-button:hover,
+.download-button:hover {
+    background: #1d4ed8;
+}
+
+.capture-button:disabled,
+.download-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.camera-icon {
+    margin-right: 7px;
+}
+
+.format-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+    font-size: 13px;   
+}
+
+.format-control select{
+    padding: 7px;
+    border: 1px solid #cdb5e1;
+    border-radius: 6px;
+    background: white;
+}
+
+.status {
+    margin: 16px 0;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.preview-panel {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.preview-panel h3{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.preview-panel img {
+    width: 100%;
+    max-height: 190px;
+    object-fit: contain;
+    border-radius: 7px;
+    background: #e2e8f0;
+    margin-bottom: 12px;
+}
+
+footer{
+    margin-top: 25px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+[hidden] {
+    display: none !important;
+}
